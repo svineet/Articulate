@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ book_name }}</title>
+    <style type="text/css">
+        {{ theme_css }}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <center>
+            <h1 id="book_heading">
+                {{ book_name }}
+            </h1>
+        </center>
+
+        <br /><br />
+
+        <div id="content">
+            {% for article in articles %}
+                <h2 class="article-heading">
+                    {{ article.heading|safe }}
+                </h2>
+                <div class="article-content">
+                    {{ article.content|safe }}
+                </div>
+            {% endfor %}
+            <hr />
+        </div>
+    </div>
+</body>
+</html>
