@@ -10,13 +10,17 @@ Running
 Install dependencies from the requirements.txt file. The format for a book is :
 
 ```
-new <bookname> <num_pages like 2>
-<page 1 name from wiki>
-<page 2 name from wiki>
+new bookname
+page 1 name from wiki
+page 2 name from wiki
 .
 .
 .
-[new <bookname> ...]
+end book
+new book2
+page
+pagewa re baba
+endbook
 end (ends the program)
 ```
 
